@@ -1,17 +1,22 @@
-<div class="container">
-  <div class="home link-container">
-    <span class="fa-solid fa-house nav-link"> </span>
+<div class="w-20 h-screen bg-[#2F3645]">
+  <!-- Home Link  -->
+  <div class="w-20 h-20 text-[30px] mb-[20px] flex justify-center items-center">
+    <span
+      class="p-1 cursor-pointer text-[#EEEDEB] hover:text-[tomato] fa-solid fa-house"
+    >
+    </span>
   </div>
 
-  <div class="item link-container">
-    <span class="fa-solid fa-wallet nav-link"></span>
-  </div>
-
-  <div class="item link-container">
-    <span class="fa-solid fa-money-bill-1 nav-link"></span>
-  </div>
-
-  <div class="item link-container">
-    <span class="fa-solid fa-piggy-bank nav-link"></span>
+  <!-- Rest Link  -->
+  <div>
+    @for (link of links;track link){
+    <div class="w-20 h-20 text-[25px] flex justify-center items-center">
+      <span
+        class="p-1 cursor-pointer text-[#EEEDEB] hover:text-[tomato] fa-solid {{
+          link?.icon
+        }}"
+      ></span>
+    </div>
+    }
   </div>
 </div>
