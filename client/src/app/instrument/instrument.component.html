@@ -2,7 +2,7 @@
   <!-- header -->
   <div class="w-full grid grid-cols-12">
     <div class="col-span-5">
-      <h1 class="text-[24px] font-bold tracking-widest leading-loose">
+      <h1 class="text-[24px] text-black tracking-widest leading-loose">
         Wallets
       </h1>
       <p class="text-[14px] text-[grey]">Welcome to Wallets</p>
@@ -15,21 +15,28 @@
   </div>
 
   <!-- instrument container -->
-  <div class="mt-8 grid grid-cols-8 gap-[30px]">
+  <div class="mt-8 grid grid-cols-8 gap-[50px]">
     <!-- instrument tabs -->
     <div class="col-span-2">
       <!-- instrument -->
       @for (instrument of [1,2,3,4,5];track instrument){
-      <div class="border-2 p-5 mb-5">
+      <div
+        class="cursor-pointer border-[1px] border-blue p-5 mb-5 drop-shadow-xl {{
+          activeLink == instrument && 'bg-offwhite'
+        }}"
+        (click)="activeLink = instrument"
+      >
         <div class="h-[50px] flex">
           <span
             class="flex justify-center items-center [50px] w-[50px] mr-[12px]"
           >
-            <i class="fa-solid fa-house text-[25px]"></i>
+            <i class="fa-solid fa-house text-[25px] text-blue"></i>
           </span>
           <div>
-            <h5 class="text-[18px] leading-[28px] font-extrabold">City Bank</h5>
-            <span class="text-[14px] leading-[22px] font-medium text-gray-800"
+            <h5 class="text-[18px] text-black leading-[28px] font-extrabold">
+              City Bank
+            </h5>
+            <span class="text-[14px] leading-[22px] font-medium text-blue"
               >$1,23,423</span
             >
           </div>
@@ -38,12 +45,21 @@
       }
 
       <!-- Add New Instrument -->
-      <div class="border-2 px-[20px] py-[15px]">
-        <div class="h-[25px] flex justify-between items-center">
-          <p class="text-[18px] font-bold text-gray-600">Add New</p>
-          <i
-            class="text-[14px] font-extrabold p-0.5 border-2 fa-solid fa-plus text-gray-500 border-gray-400"
-          ></i>
+      <div
+        style="transition: 0.1s ease-out all"
+        class="cursor-pointer rounded-md {{
+          addNewClicked || 'bg-gray pb-[3px] pr-[3px]'
+        }}"
+        (mousedown)="addNewClicked = true"
+        (mouseup)="addNewClicked = false"
+      >
+        <div class="border-[1px] bg-pink px-[20px] py-[15px] mt-10">
+          <div class="h-[25px] flex justify-between items-center">
+            <p class="text-[18px] font-bold text-black">Add New</p>
+            <i
+              class="text-[14px] font-extrabold p-0.5 fa-solid fa-plus text-blue"
+            ></i>
+          </div>
         </div>
       </div>
     </div>
@@ -51,23 +67,23 @@
     <!-- instrument details  -->
     <div class="col-span-6">
       <!-- Instrument Name -->
-      <div class="flex items-center h-20 border-2 mb-[30px] px-[20px]">
-        <h5 class="text-[25px] font-extrabold">City Bank</h5>
+      <div class="flex items-center h-20 mb-[30px] px-[20px]">
+        <h5 class="px-[20px] text-[25px] font-extrabold bg-offwhite">City Bank</h5>
       </div>
 
       <!-- Instrument Details -->
       <div class="grid grid-cols-2 gap-[30px]">
-         <!-- Row 1  -->
-				<div class="border-2 h-[160px]"></div>
-        <div class="border-2 h-[160px]"></div>
+        <!-- Row 1  -->
+        <div class=" border-[1px] border-black h-[160px] drop-shadow-xl"></div>
+        <div class=" border-[1px] border-black h-[160px]"></div>
 
-				<!-- Row 2  -->
-        <div class="border-2 h-[125px]"></div>
-        <div class="border-2 h-[125px]"></div>
+        <!-- Row 2  -->
+        <div class=" border-[1px] border-black h-[125px]"></div>
+        <div class=" border-[1px] border-black h-[125px]"></div>
       </div>
 
-			<!-- Graph -->
-			 <div class="border-2 h-[300px] mt-[30px]"></div>
+      <!-- Graph -->
+      <div class=" border-[1px] border-black h-[300px] mt-[30px]"></div>
     </div>
   </div>
 </div>

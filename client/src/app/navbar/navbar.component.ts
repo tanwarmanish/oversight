@@ -11,19 +11,20 @@ import { RouterOutlet } from '@angular/router';
 })
 export class NavbarComponent {
   title = 'client';
-
+  activeLink:string = 'Home';
   links = [
     {
-      icon: 'fa-wallet',
+      route: '',
+      title: 'Home'
+    },
+    {
       route: '',
       title: 'Wallet'
     },
     {
-      icon: 'fa-money-bill-1',
       route: '',
       title: 'Budget'
     }, {
-      icon: 'fa-piggy-bank',
       route: '',
       title: 'Goals'
     }

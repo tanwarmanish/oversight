@@ -10,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class InstrumentComponent {
   title = 'client';
+  addNewClicked: boolean = false;
+  activeLink: number | string = 1;
 }

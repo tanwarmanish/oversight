@@ -1,22 +1,12 @@
-<div class="w-20 h-screen bg-[#2F3645]">
-  <!-- Home Link  -->
-  <div class="w-20 h-20 text-[30px] mb-[20px] flex justify-center items-center">
-    <span
-      class="p-1 cursor-pointer text-[#EEEDEB] hover:text-[tomato] fa-solid fa-house"
-    >
-    </span>
+<div class="w-screen h-[82px] flex align-items justify-center py-5 border-b-2">
+  @for (link of links;track link){
+  <div
+    class="cursor-pointer px-5 mx-5 leading-10 {{
+      activeLink == link?.title && 'bg-black text-white'
+    }}"
+    (click)="activeLink = link.title"
+  >
+    {{ link?.title }}
   </div>
-
-  <!-- Rest Link  -->
-  <div>
-    @for (link of links;track link){
-    <div class="w-20 h-20 text-[25px] flex justify-center items-center">
-      <span
-        class="p-1 cursor-pointer text-[#EEEDEB] hover:text-[tomato] fa-solid {{
-          link?.icon
-        }}"
-      ></span>
-    </div>
-    }
-  </div>
+  }
 </div>
