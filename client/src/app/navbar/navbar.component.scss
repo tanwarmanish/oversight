@@ -1,5 +1,6 @@
 .sidebar {
 	background: #2f2cd8;
+	background: transparent;
 	position: fixed;
 	left: 0px;
 	height: calc(100% - 0px);
@@ -8,10 +9,13 @@
 	z-index: 3;
 	bottom: 0px;
 	border-radius: 0px;
-	-webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
-	box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	// -webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+	// 	rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	// box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+	// 	rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -42,7 +46,7 @@
 }
 
 .menu {
-	margin-top: 30px;
+	margin-top: 50px;
 	padding: 20px;
 	position: relative;
 }
@@ -73,18 +77,12 @@
 	border-radius: 6px;
 }
 
-.menu ul li:hover a,
-.menu ul li:focus a,
-.menu ul li:active a {
-	color: #fff;
-}
-
 .menu ul li:hover a .nav-text,
 .menu ul li:focus a .nav-text,
 .menu ul li:active a .nav-text {
-	display: block;
-	background: white;
-	color: #2f2cd8;
+	display: block !important;
+	background: #2f2cd8;
+	color: white;
 }
 
 @media only screen and (max-width: 991px) {
@@ -99,14 +97,14 @@
 .menu ul li:hover i,
 .menu ul li:focus i,
 .menu ul li:active i {
-	color: #fff;
+	color: #2f2cd8;
 	opacity: 1;
 }
 
 .menu ul li i {
-	color: #fff;
+	color: #2f2cd8;
 	font-size: 20px;
-	opacity: 0.6;
+	opacity: 0.8;
 	margin-right: 15px;
 	line-height: 0px;
 }
@@ -139,6 +137,9 @@
 
 .menu ul li a .nav-text {
 	display: none;
+	z-index: 999 !important;
+	position: absolute;
+	left: 60px;
 	padding: 3px 8px;
 	border-radius: 4px;
 	-webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
