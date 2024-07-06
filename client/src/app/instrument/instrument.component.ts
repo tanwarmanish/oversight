@@ -9,7 +9,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './instrument.component.scss'
 })
 export class InstrumentComponent {
-  title = 'client';
-  addNewClicked: boolean = false;
-  activeLink: number | string = 1;
 }
