@@ -1,0 +1,103 @@
+.d-block {
+	display: block !important;
+}
+
+.wallet-nav {
+	background: #fff;
+	padding: 20px;
+	cursor: pointer;
+	border-radius: 6px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	margin-bottom: 20px;
+}
+
+.wallet-nav:hover,
+.wallet-nav:focus,
+.wallet-nav.active {
+	background: #2f2cd8;
+}
+
+.wallet-nav:hover .wallet-nav-icon,
+.wallet-nav:focus .wallet-nav-icon,
+.wallet-nav.active .wallet-nav-icon {
+	background: #2321b0;
+	color: #fff;
+}
+
+.wallet-nav:hover .wallet-nav-text h3,
+.wallet-nav:hover .wallet-nav-text .h3,
+.wallet-nav:hover .wallet-nav-text p,
+.wallet-nav:focus .wallet-nav-text h3,
+.wallet-nav:focus .wallet-nav-text .h3,
+.wallet-nav:focus .wallet-nav-text p,
+.wallet-nav.active .wallet-nav-text h3,
+.wallet-nav.active .wallet-nav-text .h3,
+.wallet-nav.active .wallet-nav-text p {
+	color: #fff;
+}
+
+.wallet-nav .wallet-nav-icon {
+	background: #e1e1f9;
+	width: 50px;
+	height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-radius: 100%;
+	font-size: 20px;
+	color: #2f2cd8;
+	margin-right: 12px;
+}
+
+.wallet-nav .wallet-nav-icon i {
+	line-height: 0px;
+}
+
+.wallet-nav .wallet-nav-text p {
+	color: #7184ad;
+	opacity: 0.85;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.wallet-nav .wallet-nav-text h3,
+.wallet-nav .wallet-nav-text .h3 {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.add-card-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 15px 20px;
+	background: #fff;
+	-webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+		rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+	border-radius: 6px;
+}

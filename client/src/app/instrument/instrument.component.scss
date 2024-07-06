@@ -4,6 +4,7 @@
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 576px) {
   .content-body {
     margin-left: 0px;
@@ -16,6 +17,7 @@
   margin-right: 0px;
   margin-top: 0px;
 }
+
 @media only screen and (max-width: 767px) {
   .dashboard .content-body {
     margin-left: 0px;
@@ -33,9 +35,7 @@
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: var(--bs-border-radius);
   --bs-card-box-shadow: ;
-  --bs-card-inner-border-radius: calc(
-    var(--bs-border-radius) - (var(--bs-border-width))
-  );
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
@@ -83,13 +83,11 @@
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
+
 .card-header:first-child {
-  border-radius: var(--bs-card-inner-border-radius)
-    var(--bs-card-inner-border-radius) 0 0;
+  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
 }
-.d-block {
-  display: block !important;
-}
+
 
 .d-flex {
   display: -webkit-box !important;
@@ -139,6 +137,7 @@
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 576px) {
   .content-body {
     margin-left: 0px;
@@ -151,6 +150,7 @@
   margin-right: 0px;
   margin-top: 0px;
 }
+
 @media only screen and (max-width: 767px) {
   .dashboard .content-body {
     margin-left: 0px;
@@ -162,6 +162,7 @@
   background: transparent;
   border-radius: 6px;
 }
+
 .page-title .page-title-content h3,
 .page-title .page-title-content .h3 {
   font-size: 24px;
@@ -173,15 +174,16 @@
   display: inline-block;
   font-size: 14px;
 }
+
 .breadcrumbs.active a {
   color: #fff;
 }
+
 .breadcrumbs i {
   margin: 0px 10px;
-  font-size: 20px;
-  line-height: 0;
+  font-size: 16px;
+  top: 2px;
   position: relative;
-  top: 5px;
 }
 
 .credit-card {
@@ -192,6 +194,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .credit-card .type-brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,19 +206,23 @@
   -ms-flex-align: center;
   align-items: center;
 }
+
 .credit-card .type-brand h4,
 .credit-card .type-brand .h4 {
   color: #7184ad;
   font-size: 14px;
 }
+
 .credit-card .type-brand img {
   height: 30px;
   padding: 4px 6px;
   border-radius: 8px;
 }
+
 .credit-card .cc-number {
   padding: 32px 0px;
 }
+
 .credit-card .cc-number h6,
 .credit-card .cc-number .h6 {
   display: inline-block;
@@ -223,6 +230,7 @@
   color: #fff;
   font-size: 20px;
 }
+
 .credit-card .cc-holder-exp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,20 +239,25 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .credit-card .cc-holder-exp h5,
 .credit-card .cc-holder-exp .h5 {
   color: #fff;
   margin-bottom: 0px;
 }
+
 .credit-card .cc-holder-exp .exp {
   color: #fff;
 }
+
 .credit-card .cc-holder-exp .exp strong {
   color: #fff;
 }
+
 .credit-card.visa {
   background: rgb(30, 27, 75);
 }
+
 .credit-card.visa:hover .cc-info {
   background: #0f172a;
 }
@@ -260,11 +273,13 @@
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
+
 .cc-info p {
   margin-bottom: 0px;
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .cc-info p strong {
   color: #fff;
   opacity: 1;
@@ -280,6 +295,7 @@
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
   background-color: #fff;
 }
+
 .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +310,7 @@
   background-color: transparent;
   padding: 20px 20px 0px;
 }
+
 @media only screen and (max-width: 767px) {
   .card-header {
     -webkit-box-orient: vertical;
@@ -305,11 +322,13 @@
     align-items: start;
   }
 }
+
 .card-title {
   font-size: 18px;
   margin-bottom: 0px;
   color: #1f2c73;
 }
+
 .card .card-body {
   padding: 20px;
   background: transparent;
@@ -320,6 +339,7 @@
   border-bottom: 1px solid rgb(229, 234, 239) !important;
   background-color: transparent;
 }
+
 .table th:last-child {
   text-align: right;
 }
@@ -331,9 +351,11 @@
 .table {
   margin-bottom: 0px;
 }
+
 .table tr:last-child td {
   border-bottom: 0px solid rgb(229, 234, 239);
 }
+
 .table tr td {
   background-color: transparent;
   border-bottom: 1px solid rgb(229, 234, 239);
@@ -341,6 +363,7 @@
   padding: 15px 5px;
   color: #7184ad;
 }
+
 .table tr td:last-child {
   text-align: right;
 }
@@ -349,6 +372,7 @@
   position: relative;
   display: inline-block;
 }
+
 #circle5 span {
   position: absolute;
   left: 40px;
@@ -366,16 +390,19 @@
   box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
 }
+
 .stat-widget-1 h6,
 .stat-widget-1 .h6 {
   margin-bottom: 0px;
   font-size: 14px;
 }
+
 .stat-widget-1 h3,
 .stat-widget-1 .h3 {
   font-size: 28px;
   margin: 10px 0px;
 }
+
 .stat-widget-1 p {
   border-top: 1px solid rgb(229, 234, 239);
   padding-top: 10px;
@@ -384,6 +411,7 @@
   font-weight: 400;
   margin-bottom: 0px;
 }
+
 .stat-widget-1 p span i {
   font-size: 18px;
   line-height: 0;
@@ -391,6 +419,7 @@
   position: relative;
   top: 3px;
 }
+
 .stat-widget-1 p strong {
   color: #7184ad;
   font-weight: 500;
@@ -427,6 +456,7 @@
   align-items: center;
   font-size: 15px;
 }
+
 .table-category-icon i {
   display: inline-block;
   line-height: 0px;
@@ -439,113 +469,17 @@
   font-size: 16px;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.add-card-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 15px 20px;
-  background: #fff;
-  -webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
-  box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
-  border-radius: 6px;
-}
-
-.wallet-nav {
-  background: #fff;
-  padding: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
-  box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
-    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
-  margin-bottom: 20px;
-}
-.wallet-nav:hover,
-.wallet-nav:focus,
-.wallet-nav.active {
-  background: #2f2cd8;
-}
-.wallet-nav:hover .wallet-nav-icon,
-.wallet-nav:focus .wallet-nav-icon,
-.wallet-nav.active .wallet-nav-icon {
-  background: #2321b0;
-  color: #fff;
-}
-.wallet-nav:hover .wallet-nav-text h3,
-.wallet-nav:hover .wallet-nav-text .h3,
-.wallet-nav:hover .wallet-nav-text p,
-.wallet-nav:focus .wallet-nav-text h3,
-.wallet-nav:focus .wallet-nav-text .h3,
-.wallet-nav:focus .wallet-nav-text p,
-.wallet-nav.active .wallet-nav-text h3,
-.wallet-nav.active .wallet-nav-text .h3,
-.wallet-nav.active .wallet-nav-text p {
-  color: #fff;
-}
-.wallet-nav .wallet-nav-icon {
-  background: #e1e1f9;
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 100%;
-  font-size: 20px;
-  color: #2f2cd8;
-  margin-right: 12px;
-}
-.wallet-nav .wallet-nav-icon i {
-  line-height: 0px;
-}
-.wallet-nav .wallet-nav-text p {
-  color: #7184ad;
-  opacity: 0.85;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-.wallet-nav .wallet-nav-text h3,
-.wallet-nav .wallet-nav-text .h3 {
-  font-size: 18px;
-  margin-bottom: 0px;
-}
-
 .wallet-tab-content {
   padding-left: 30px;
 }
+
 @media only screen and (max-width: 1199px) {
   .wallet-tab-content {
     padding-top: 30px;
     padding-left: 0px;
   }
 }
+
 .wallet-tab-content .wallet-tab-title {
   padding: 16px 20px;
   background: #fff;
@@ -556,6 +490,7 @@ img {
   box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
 }
+
 .wallet-tab-content .wallet-tab-title h3,
 .wallet-tab-content .wallet-tab-title .h3 {
   font-size: 20px;
@@ -572,10 +507,12 @@ img {
   border-bottom: 1px solid rgb(229, 234, 239);
   padding: 10px 0px;
 }
+
 .funds-credit:last-child {
   padding-bottom: 0px;
   border: 0px;
 }
+
 .funds-credit h5,
 .funds-credit .h5 {
   margin-bottom: 0px;

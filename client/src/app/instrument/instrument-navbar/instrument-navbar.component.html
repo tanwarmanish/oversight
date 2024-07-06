@@ -1,0 +1,27 @@
+<div class="nav d-block">
+  <div class="row">
+    @for (instrument of instruments; track $index) {
+    <div class="col-xl-12 col-md-6" (click)="loadInstrument(instrument)">
+      <div
+        class="wallet-nav"
+        [class.active]="activeInstrument == instrument?.id"
+      >
+        <div class="wallet-nav-icon">
+          <span><i class="{{ instrument?.icon }}"></i></span>
+        </div>
+        <div class="wallet-nav-text">
+          <h3>{{ instrument?.title }}</h3>
+          <p>${{ instrument?.balance }}</p>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
+<div class="add-card-link">
+  <h5 class="mb-0">Add new wallet</h5>
+  <a href="add-new-account.html">
+    <i class="fa-regular fa-square-plus"></i>
+  </a>
+</div>

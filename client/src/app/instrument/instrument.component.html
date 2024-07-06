@@ -13,7 +13,7 @@
             <div class="col-auto">
               <div class="breadcrumbs">
                 <a href="wallets.html#">Home </a>
-                <span><i class="fi fi-rr-angle-small-right"></i></span>
+                <span><i class="fa-solid fa-angle-right"></i></span>
                 <a href="wallets.html#">Wallets</a>
               </div>
             </div>
@@ -24,82 +24,15 @@
     <div class="wallet-tab">
       <div class="row g-0">
         <div class="col-xl-3">
-          <div class="nav d-block">
-            <div class="row">
-              <div class="col-xl-12 col-md-6">
-                <div
-                  class="wallet-nav active"
-                  data-bs-toggle="pill"
-                  data-bs-target="#a1"
-                >
-                  <div class="wallet-nav-icon">
-                    <span><i class="fi fi-rr-bank"></i></span>
-                  </div>
-                  <div class="wallet-nav-text">
-                    <h3>City Bank</h3>
-                    <p>$221,478</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-12 col-md-6">
-                <div
-                  class="wallet-nav"
-                  data-bs-toggle="pill"
-                  data-bs-target="#a2"
-                >
-                  <div class="wallet-nav-icon">
-                    <span><i class="fi fi-rr-credit-card"></i></span>
-                  </div>
-                  <div class="wallet-nav-text">
-                    <h3>Debit Card</h3>
-                    <p>$221,478</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-12 col-md-6">
-                <div
-                  class="wallet-nav"
-                  data-bs-toggle="pill"
-                  data-bs-target="#a3"
-                >
-                  <div class="wallet-nav-icon">
-                    <span><i class="fi fi-brands-visa"></i></span>
-                  </div>
-                  <div class="wallet-nav-text">
-                    <h3>Visa Card</h3>
-                    <p>$221,478</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-12 col-md-6">
-                <div
-                  class="wallet-nav"
-                  data-bs-toggle="pill"
-                  data-bs-target="#a4"
-                >
-                  <div class="wallet-nav-icon">
-                    <span><i class="fi fi-rr-money-bill-wave-alt"></i></span>
-                  </div>
-                  <div class="wallet-nav-text">
-                    <h3>Cash</h3>
-                    <p>$221,478</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="add-card-link">
-            <h5 class="mb-0">Add new wallet</h5>
-            <a href="add-new-account.html">
-              <i class="fi fi-rr-square-plus"></i>
-            </a>
-          </div>
+          <instrument-navbar
+            (details)="instrument = $event"
+          ></instrument-navbar>
         </div>
         <div class="col-xl-9">
           <div class="tab-content wallet-tab-content">
             <div class="tab-pane show active" id="a1">
               <div class="wallet-tab-title">
-                <h3>City Bank</h3>
+                <h3>{{ instrument?.title }}</h3>
               </div>
               <div class="row">
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
